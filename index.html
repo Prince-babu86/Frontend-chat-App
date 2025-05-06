@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/Login.css" />
+    <link rel="stylesheet" href="stylesheets/App.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="fullscreenview">
+        <img src="https://i.pinimg.com/736x/de/f3/5f/def35faa9d4e7d5e09f0f276c96573c8.jpg" alt="">
+      </div>
+
+      <div class="userProfileView">
+        <i class="ri-close-fill"></i>
+        <img src="https://i.pinimg.com/736x/de/f3/5f/def35faa9d4e7d5e09f0f276c96573c8.jpg" alt="">
+      </div>
+      <div class="form-wrapper">
+        <form class="form-box">
+          <h2>Login Info</h2>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+            required
+          />
+          <input
+            type="text"
+            id="skill"
+            name="skill"
+            placeholder="Skill"
+            required
+          />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Address"
+            required
+          />
+          <button id="login-btn-form" type="submit">Submit</button>
+        </form>
+      </div>
+      <menu>
+        <div class="mn-top">
+          <i
+            style="font-size: 30px; color: blue"
+            class="ri-chat-smile-ai-fill"
+          ></i>
+        </div>
+        <div class="bottom">
+          <i class="ri-chat-1-fill"></i>
+          <i class="ri-phone-fill"></i>
+          <i class="ri-donut-chart-fill"></i>
+          <i class="ri-settings-3-line"></i>
+        </div>
+      </menu>
+
+      <div class="container">
+       
+        <nav>
+          <div class="nv-left">
+            <i class="ri-menu-4-line"></i>
+            <img
+              id="logo"
+              src="https://i.pinimg.com/736x/0a/fd/51/0afd51574035e142398877b08609c751.jpg"
+              alt=""
+            />
+            <h1>Message</h1>
+          </div>
+          <div class="nv-right">
+            <i class="ri-add-line"></i>
+            <button id="login-btn">Login</button>
+            <i class="ri-notification-4-fill"></i>
+
+            <img id="loged-uesr-image" src="" alt="" />
+            <i class="ri-more-2-fill"></i>
+          </div>
+        </nav>
+
+        <div class="message-container">
+          <div class="contact-section">
+            <div class="search">
+              <i class="ri-search-2-line"></i>
+              <input type="text" placeholder="Search Message" />
+            </div>
+            <div class="contacts"></div>
+          </div>
+          <div class="pager">
+            <img
+              src="https://i.pinimg.com/736x/50/80/99/5080995fb88f572d9a467f2bfa6b5476.jpg"
+              alt=""
+            />
+            <h1>Welcome the My chat App</h1>
+            <h1>Please Select a contact</h1>
+          </div>
+          <div class="message-box-banner">
+            
+            <div class="msg-box-top">
+              <div class="user-data">
+                <i class="ri-arrow-left-line"></i>
+                <img
+                  src="https://i.pinimg.com/736x/d4/76/8c/d4768c0e7d8762294c1f169a6a1d3c27.jpg"
+                  alt=""
+                />
+                <div class="user-stat">
+                  <h4>Princebabu</h4>
+                  <div class="user-stat-circi">
+                    <div class="circ"></div>
+                    <h4>Online</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="msg-box-right">
+                <i class="ri-information-2-line"></i>
+              </div>
+            </div>
+
+            <div class="messages-container-data"></div>
+            <div class="emojies">
+              😜🧐🫣🫢🥺😵‍💫🥵😳😡😠😲😝🤤😒🫤😕🙁🤐🥱😶‍🌫️🙂🤩😅😂😀😁😂🤣😃😄😅😆😉😊😋😎🥲😙😗🥰😘😍😚☺️🙂🤩🤗🤔🫥😶😑😐🤨🫡😶‍🌫️🙄😏😣😥😮😴🥱😫😪😯🤐😌😜😝🤤😒🫠🙃🫤😕😔😓😔😕🫤🙃🫠😞🙁☹️😲🤑😟😤😢😭😦😧😰😮‍💨😬🤯😩😩😨
+            </div>
+            <div class="send-msg">
+              <input
+                id="fileupload"
+                style="display: none"
+                type="file"
+                name="file"
+                accept="image/*"
+              />
+              <label for="fileupload">
+                <i
+                  for="fileupload"
+                  style="font-size: 25px; cursor: pointer"
+                  class="ri-attachment-2"
+                ></i>
+              </label>
+              <div class="message-send-input">
+                <input
+                  id="msg-sender-input"
+                  type="text"
+                  placeholder="Enter a message here"
+                />
+                <i class="ri-emotion-line"></i>
+              </div>
+              <div class="btn-send-msg">
+                <i class="ri-send-plane-fill"></i>
+                <h4>Send</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-details-sections">
+            <i class="ri-close-fill"></i>
+            <div class="user-dt-top">
+              <img
+                src="https://i.pinimg.com/736x/d4/76/8c/d4768c0e7d8762294c1f169a6a1d3c27.jpg"
+                alt=""
+              />
+              <h2>Princebabu</h2>
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <h4>Web developer</h4>
+            </div>
+
+            <div class="user-dt-top">
+              <div class="item">
+                <i class="ri-phone-fill"></i>
+                <h4 class="item-phone">+91 9528110949</h4>
+              </div>
+              <div class="item">
+                <i class="ri-mail-unread-line"></i>
+                <h4 class="item-email">princebabu4495@gmal.com</h4>
+              </div>
+              <div class="item">
+                <i class="ri-calendar-line"></i>
+                <h4 class="item-createdat">20.04.2025</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <iframe width="386" height="686" src="https://www.youtube.com/embed/tbJCUeQi7dc" allowfullscreen></iframe> -->
+    <!-- <iframe src="https://www.youtube.com/embed/GZicMHcRWF8?list=RDGZicMHcRWF8" ></iframe> -->
+  </body>
+  <script src="javascript/script.js"></script>
+</html>

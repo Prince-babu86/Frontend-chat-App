@@ -1,0 +1,202 @@
+.ri-more-2-fill{
+    display: none;
+}
+
+#logo{
+    display: none;
+}
+
+.ri-arrow-left-line{
+    display: none;
+}
+
+.ri-close-fill{
+    font-size: 30px;
+    cursor: pointer;
+    right: 3%;
+    position: absolute;
+}
+
+
+.emojies{
+   font-size: 40px;
+    width:50%;
+    background-color: rgb(0, 0, 0 , 0.5);
+    position: absolute;
+    bottom:2%;
+    left: 25%;
+    margin:  0 auto;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    display: none;
+    padding: 20px;
+
+}
+
+
+.fullscreenview{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreenview img{
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.userProfileView{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0 , 0.8);
+    z-index: 1050;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+}
+.userProfileView i{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    color: white;
+}
+.userProfileView img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
+}
+@media (max-width:600px) {
+   
+   .container nav{
+        border-bottom: none;
+       padding: 10px 15px;
+       /* background-color: crimson; */
+      
+       
+    }
+
+    .container nav .ri-menu-4-line , .ri-add-line , .ri-notification-4-fill{
+        display: none;
+    }
+
+    .container nav .nv-left h1{
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nv-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    menu{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        border: none;
+      
+    }
+    .message-box-banner , .user-details-sections  , .pager{
+        display: none;
+    }
+
+    .message-box-banner{
+       /* display: none; */
+       flex-direction: column;
+       width: 100%;
+       position: fixed;
+       top:0;
+       left: 0;
+       z-index: 1000;
+    }
+
+
+    
+    .contact-section{
+        border: none;
+        width: 100%;
+        /* padding: 10px 0; */
+        /* background-color: firebrick; */
+    }
+
+  
+    .contact-section .contacts{
+        border: none;
+        margin-top: 0;
+        padding: 20px 0;
+       
+    }
+    .ri-more-2-fill{
+        display: block;
+    }
+    #logo{
+        display: block;
+        width: 40px;
+        border-radius: 50%;
+        /* background-color: ; */
+    }
+
+    .ri-arrow-left-line{
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        left: 4%;
+    }
+
+    .msg-box-top .user-data{
+        gap: 4px;
+        margin-left: 40px;
+    }
+
+    .user-stat h4 {
+        font-size: 15px;
+        color: #464646;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* padding: 20px 8px; */
+      }
+
+      .message-bubble{
+        max-width: 50%;
+      }
+      .user-stat-circi h4{
+        font-size: 12px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .message-bubble .image-add{
+        width: 150px;
+        
+      }
+
+      .message-bubble iframe{
+        width: 200px;
+        height: 400px;
+        margin-bottom: 10px;
+      }
+
+      .fullscreenview img{
+        width: 350px;
+      }
+
+      .userProfileView img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+      }
+}

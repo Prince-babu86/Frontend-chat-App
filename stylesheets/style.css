@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+
+
+/* .spinner{
+  width: 80%;
+  height: 50px;
+  background-color: #fff;
+} */
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+menu {
+  height: 100%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  border-right: 2.2px solid gray;
+  padding: 30px 0;
+  flex-direction: column;
+}
+
+menu .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+menu .bottom i {
+  font-size: 28px;
+  color: rgb(28, 28, 28);
+  cursor: pointer;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  position: relative;
+}
+
+.pager{
+ height: 90%;
+ z-index: 105;
+ width: 74.7%;
+ position: absolute;
+ background-color: crimson;
+ left: 25.1%;
+ background-color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.pager img{
+  width: 400px;
+}
+.pager h1{
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.container nav {
+  padding: 15px 30px;
+  width: 100%;
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nv-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nv-left i {
+  font-size: 25px;
+}
+
+.nv-left h1 {
+  font-size: 19px;
+  color: rgb(19, 19, 19);
+}
+
+.nv-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nv-right .ri-add-line {
+  background-color: blue;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+}
+
+.nv-right .ri-notification-4-fill {
+  padding: 7px;
+  background-color: #eff3f4;
+  border-radius: 50%;
+  font-size: 22px;
+  color: rgb(129, 129, 129);
+}
+.nv-right i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.nv-right img {
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+  cursor: pointer;
+}
+
+.message-container {
+  display: flex;
+  width: 100%;
+  height: 91%;
+}
+
+.contact-section {
+  height: 100%;
+  width: 25%;
+  border-right: 2.2px solid gray;
+  padding: 20px 2px;
+}
+
+.contact-section .search {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background-color: #f2f4f6;
+  padding: 12px 10px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 7px;
+}
+
+.contact-section .search input {
+  height: 100%;
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 13px;
+  font-family: cursive;
+}
+
+.contact-section .contacts {
+  width: 100%;
+  height: 92%;
+  /* background-color: cadetblue; */
+  margin-top: 20px;
+  border-top: 2.2px solid gray;
+  padding: 20px 0;
+}
+
+.contact-section .contacts .contact {
+  height: 70px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 5px 9px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 7px;
+
+}
+
+.contact .select{
+  width: 100%;
+  height: 100%;
+  padding: 5px 9px;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.contact .user {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  position: relative;
+}
+
+.contact .user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  z-index: 102;
+}
+
+.contact .user h4 {
+  font-size: 15px;
+}
+
+.contact .user .countmsg {
+  position: absolute;
+  right: 2%;
+  margin-top: 8px;
+  height: 22px;
+  width: 22px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.contact .user-ext {
+  width: 70%;
+  position: absolute;
+  top: 33%;
+  left: 20%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact .user-ext h5 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #464646;
+}
+
+.contact .user-ext h6 {
+  font-size: 13.5px;
+  width: 100%;
+  color: gray;
+}
+
+.message-box-banner {
+  height: 100%;
+  width: 75%;
+  border-right: 2.2px solid gray;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+ 
+}
+
+.msg-box-top {
+  width: 100%;
+  height: 81.2px;
+  border-bottom: 2.2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: white;
+  
+}
+
+.msg-box-top .user-data {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.msg-box-top .user-data img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-fit: top;
+}
+
+.msg-box-top .user-stat {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.user-stat h4 {
+  font-size: 15px;
+  color: #464646;
+}
+
+.user-stat .user-stat-circi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.user-stat .user-stat-circi .circ {
+  height: 7px;
+  width: 7px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.user-stat-circi h4 {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.msg-box-right i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #464646;
+}
+
+
+
+.message-image {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.messages-container-data {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  height: 80.5%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  background-image: url(https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+/* Message row base */
+.message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Message bubble */
+.message-bubble {
+  max-width: 30%;
+  background-color: #e0e0e0;
+  padding: 10px 14px;
+  border-radius: 16px;
+  position: relative;
+ 
+}
+
+.message-bubble .image-add{
+  width: 100%;
+  border-radius: 10px;
+   /* margin: 0 150px; */
+
+}
+.message-bubble .image-add2{
+width: 70%;
+border-radius:10px ;
+}
+.message-bubble iframe{
+  width: 100%;
+  height: 500px;
+}
+
+.message-bubble .text {
+  font-size: 14px;
+  margin-bottom: 4px;
+  
+}
+
+.message-bubble .meta {
+  font-size: 11px;
+  color: #555;
+  text-align: right;
+}
+
+/* Avatar */
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Sender (left side) */
+.message-row.sender {
+  flex-direction: row;
+}
+
+.message-row.sender .message-bubble {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* You (right side) */
+.message-row.you {
+  flex-direction: row-reverse;
+}
+
+.message-row.you .message-bubble {
+  background-color: #4f9cf9;
+  color: #fff;
+}
+
+.send-msg {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #f1f4fb;
+  gap: 10px;
+}
+
+.send-msg .message-send-input {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.send-msg input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.send-msg .message-send-input i {
+  position: absolute;
+  right: 2%;
+  color: rgb(41, 41, 41);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn-send-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c56f9;
+  color: white;
+  padding: 8px 15px;
+  gap: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-send-msg h4 {
+  font-size: 13px;
+}
+
+.user-details-sections {
+  height: 100%;
+  width: 20%;
+ display: none;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.user-details-sections .user-dt-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 2.2px solid gray;
+  padding: 15px 0;
+}
+
+.user-details-sections .user-dt-top img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.user-details-sections .user-dt-top h2 {
+  font-size: 18px;
+  color: #464646;
+}
+
+.user-details-sections .user-dt-top h3 {
+  font-size: 15px;
+  color: #464646;
+}
+
+.user-details-sections .user-dt-top h4 {
+  font-size: 14px;
+  color: #464646;
+}
+
+.user-dt-top .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #999999;
+}
+
+.user-dt-top .item i {
+  font-size: 21px;
+}
+
+
