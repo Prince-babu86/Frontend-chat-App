@@ -610,10 +610,12 @@ document
   });
 
 document
-  .querySelector(".ri-close-fill")
+  .querySelector(".user-details-sections .ri-close-fill")
   .addEventListener("click", function (e) {
     document.querySelector(".user-details-sections").style.display = "none";
-    document.querySelector(".message-box-banner").style.width = "75%";
+    document.querySelector(".message-box-banner").style.width = "100%";
+    console.log(".........");
+
   });
 
 
@@ -646,3 +648,4 @@ document.querySelector(".fullscreenview").addEventListener("click" , function(e)
   }
   
 })
+

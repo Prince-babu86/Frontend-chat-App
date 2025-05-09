@@ -127,7 +127,9 @@
        z-index: 1000;
     }
 
-
+.message-container{
+    width: 100%;
+}
     
     .contact-section{
         border: none;
@@ -198,5 +200,14 @@
         height: 300px;
         width: 300px;
         border-radius: 50%;
+      }
+
+      .user-details-sections{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1500;
+        background-color: white;
       }
 }
